@@ -34,12 +34,12 @@
 <br/>
 
 
-Firstly, we will present the reconstructed speech using the BERT model (audio unseen in the model training).
+Firstly, we will present the reconstructed speech using the BERT model (audio unseen in the speech BERT model training).
 
 <div>
     <h3>Masked segment reconstructed by speech BERT with Griffin-Lim vocoder</h3>
     
-    <i>There was not a worse vagabond in Shrewsbury than old Barney the piper.”</i>
+    <i>There was not a worse vagabond in Shrewsbury than old Barney the piper.</i>
         <table><tbody><tr>
             <td>Recording:</td>
             <td>
@@ -89,7 +89,38 @@ Firstly, we will present the reconstructed speech using the BERT model (audio un
 </tbody></table>
 
 <br/>
-Then the synthesized speech in our experiments will listed in the order of <i>internal single speaker</i> followed by the <i>LJ speaker</i>.
+Next, the audio files for F0 contour comparison as shown in Fig. 4 will be listed. The recording, speech synthesized without and with speech BERT embedding will be included.
+<br/>
+<br/>
+<i>But the dilemma for Macedonia is even deeper than that.</i>
+        <table><tbody><tr>
+            <td>Recording:</td>
+            <td>
+                <audio controls="">
+                    <source src="wav/single_spkr/f0_contour/0000000336_recording.wav">
+                </audio>
+            </td>
+            <td></td>
+            <td>w/o:</td>
+            <td>
+                <audio controls="">
+                    <source src="wav/single_spkr/f0_contour/0000000336_wo.wav">
+                </audio>
+            </td>
+            <td></td>
+            <td>w/:</td>
+            <td>
+                <audio controls="">
+                    <source src="wav/single_spkr/f0_contour/0000000336_w.wav">
+                </audio>
+            </td>
+        </tr>
+    </tbody></table>
+
+<h3> Objective evaluation
+<br/>
+
+Then, the synthesized speech in our experiments will be listed in the order of <i>internal single speaker</i> followed by the <i>LJ speaker</i>.
 <br/>
 
 <h3>Internal single speaker</h3>
@@ -105,7 +136,7 @@ Then the synthesized speech in our experiments will listed in the order of <i>in
 
 <br/>
 
-<table style="border:1px solid black;margin-left:auto;margin-right:auto;"><tbody><tr>
+<table style="margin-left:auto;margin-right:auto;"><tbody><tr>
         <td colspan="3"><b>In-domain synthesized speech synthesis with WaveNet vocoder</b></td>
 </tr>
         <tr><td></td>
@@ -143,7 +174,7 @@ Then the synthesized speech in our experiments will listed in the order of <i>in
 
 <br/>
 
-<table style="border:1px solid black;margin-left:auto;margin-right:auto;"><tbody><tr>
+<table style="margin-left:auto;margin-right:auto;"><tbody><tr>
         <td colspan="3"><b>Out-of-domain synthesized speech synthesis with WaveNet vocoder</b></td>
 </tr>
 <tr><td></td>
@@ -194,7 +225,7 @@ Note that for LJ speaker, we didn't train a WaveNet voder for it specifically. T
     <td></td>
 </tbody></table>
 
-<table style="border:1px solid black;margin-left:auto;margin-right:auto;"><tbody><tr>
+<table style="margin-left:auto;margin-right:auto;"><tbody><tr>
         <td colspan="3"><b>In-domain synthesized speech synthesis with WaveNet vocoder</b></td>
 </tr>
 <tr><td></td>
@@ -214,6 +245,7 @@ Note that for LJ speaker, we didn't train a WaveNet voder for it specifically. T
         </audio>
     </td>
 </tr>
+<!--
 <tr>
         <td><i>But Moses fled from the presence of Pharaoh and took up his abode in the land of Midian.</i></td>
         <td>
@@ -227,6 +259,7 @@ Note that for LJ speaker, we didn't train a WaveNet voder for it specifically. T
             </audio>
         </td>
     </tr>
+	-->
 </tr>
 <tr>
     <tr>
@@ -248,7 +281,7 @@ Note that for LJ speaker, we didn't train a WaveNet voder for it specifically. T
 <br/>
 
 
-<table style="border:1px solid black;margin-left:auto;margin-right:auto;"><tbody><tr>
+<table style="margin-left:auto;margin-right:auto;"><tbody><tr>
         <td colspan="3"><b>Out-of-domain synthesized speech synthesis with WaveNet vocoder</b></td>
 </tr>
         <tr><td></td>

@@ -32,6 +32,8 @@
 </div> 
 
 <br/>
+<br/>
+<br/>
 
 
 Firstly, we will present the reconstructed speech using the BERT model (audio unseen in the speech BERT model training).
@@ -89,9 +91,11 @@ Firstly, we will present the reconstructed speech using the BERT model (audio un
 </tbody></table>
 
 <br/>
-Next, the audio files for F0 contour comparison as shown in Fig. 4 will be listed. The recording, speech synthesized without and with speech BERT embedding will be included.
 <br/>
 <br/>
+Next, the audio files for F0 contour comparison as shown in Fig. 4 will be listed. The recording, speech synthesized without and with speech BERT embedding are included as follows.
+<h3>F0 contour comparison</h3>
+
 <i>But the dilemma for Macedonia is even deeper than that.</i>
         <table><tbody><tr>
             <td>Recording:</td>
@@ -117,11 +121,10 @@ Next, the audio files for F0 contour comparison as shown in Fig. 4 will be liste
         </tr>
     </tbody></table>
 
-<h3> Objective evaluation
 <br/>
-
-Then, the synthesized speech in our experiments will be listed in the order of <i>internal single speaker</i> followed by the <i>LJ speaker</i>.
 <br/>
+<br/>
+Then, the synthesized speech in our experiments for subjective evaluation will be listed in the order of <i>internal single speaker</i> followed by the <i>LJ speaker</i>.
 
 <h3>Internal single speaker</h3>
 <table><tbody><tr>
@@ -210,11 +213,8 @@ Then, the synthesized speech in our experiments will be listed in the order of <
 </tr>
 </tbody></table>
 
-<br/>
-
 <h3>LJ speaker</h3>
-<br/>
-Note that for LJ speaker, we didn't train a WaveNet voder for it specifically. The WaveNet voder was a universal model trained on multiple speakers, thus the speech quality of the synthesized speech is not very good. But we still can feel the prosody difference between the two methods.
+Note that for LJ speaker, the WaveNet voder was a universal model trained on multiple speakers, thus the speech quality of the synthesized speech is not very good. But we still can feel the prosody difference between the two methods.
 <table><tbody><tr>
     <td>Recording sample:</td>
     <td>
